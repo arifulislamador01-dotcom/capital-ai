@@ -1,0 +1,3 @@
+'use client';
+import AITextTool from '@/components/shared/AITextTool';
+export default function PrivacyPolicyPage() { return <AITextTool title="Privacy Policy" titleBn="প্রাইভেসি পলিসি" icon="🔒" description="আপনার ওয়েবসাইটের জন্য প্রাইভেসি পলিসি তৈরি করুন" placeholder="ওয়েবসাইট/অ্যাপের নাম ও বিবরণ... যেমন: MyShop - e-commerce website" promptTemplate={(t) => `Generate a comprehensive Privacy Policy for: ${t}\n\nInclude sections:\n1. Information Collection\n2. Use of Information\n3. Data Protection\n4. Cookies\n5. Third-party Services\n6. User Rights\n7. Contact Information\n\nPrivacy Policy:`} creditCost={2} inputLabel="ওয়েবসাইট/অ্যাপ" maxTokens={800} />; }

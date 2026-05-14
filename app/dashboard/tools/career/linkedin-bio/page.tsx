@@ -1,0 +1,3 @@
+'use client';
+import AITextTool from '@/components/shared/AITextTool';
+export default function LinkedInBioPage() { return <AITextTool title="LinkedIn Bio" titleBn="LinkedIn বায়ো" icon="💼" description="প্রফেশনাল LinkedIn বায়ো তৈরি করুন" placeholder="আপনার পেশা ও দক্ষতা... যেমন: Full Stack Developer, ৫ বছরের অভিজ্ঞতা" promptTemplate={(t) => `Write 3 professional LinkedIn "About" section bios for someone who is: ${t}\n\nEach should be:\n- 150-300 words\n- Professional but personable\n- Include achievements and skills\n- End with a CTA\n\nLinkedIn Bios:`} creditCost={2} inputLabel="পেশা ও দক্ষতা" />; }

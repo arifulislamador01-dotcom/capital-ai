@@ -1,0 +1,3 @@
+'use client';
+import AITextTool from '@/components/shared/AITextTool';
+export default function InterviewQAPage() { return <AITextTool title="Interview Q&A" titleBn="ইন্টারভিউ প্রশ্ন ও উত্তর" icon="🎤" description="পদভিত্তিক ইন্টারভিউ প্রশ্ন ও উত্তর তৈরি করুন" placeholder="পদের নাম... যেমন: Frontend Developer, Marketing Manager, Bank Officer" promptTemplate={(t) => `Generate 15 common interview questions and best answers for the position: ${t}\n\nInclude:\n- 5 General questions\n- 5 Technical/role-specific questions\n- 5 Behavioral questions\n\nFor each, provide the question and a sample strong answer.\n\nInterview Q&A:`} creditCost={2} inputLabel="পদের নাম" maxTokens={800} />; }

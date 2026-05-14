@@ -1,0 +1,3 @@
+'use client';
+import AITextTool from '@/components/shared/AITextTool';
+export default function TermsPage() { return <AITextTool title="Terms of Service" titleBn="টার্মস অফ সার্ভিস" icon="📃" description="ওয়েবসাইটের জন্য Terms of Service তৈরি করুন" placeholder="ওয়েবসাইট/সার্ভিসের নাম ও বিবরণ..." promptTemplate={(t) => `Generate comprehensive Terms of Service for: ${t}\n\nInclude:\n1. Acceptance of Terms\n2. User Responsibilities\n3. Intellectual Property\n4. Limitation of Liability\n5. Termination\n6. Governing Law\n7. Changes to Terms\n\nTerms of Service:`} creditCost={2} inputLabel="ওয়েবসাইট/সার্ভিস" maxTokens={800} />; }

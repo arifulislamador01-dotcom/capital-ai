@@ -1,0 +1,26 @@
+# Allow all search engine bots
+User-agent: *
+Allow: /
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Specific rules for Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Disallow private/admin areas (if any)
+User-agent: *
+Disallow: /admin
+Disallow: /api
+Disallow: /private
+
+# Sitemap location
+Sitemap: https://capitalai.com/sitemap.xml
+
+# Cache control
+User-agent: *
+Cache-control: no-cache

@@ -1,0 +1,3 @@
+'use client';
+import AITextTool from '@/components/shared/AITextTool';
+export default function ReviewResponsePage() { return <AITextTool title="Review Response" titleBn="রিভিউ রেসপন্স" icon="⭐" description="কাস্টমার রিভিউর প্রফেশনাল উত্তর লিখুন" placeholder="রিভিউ পেস্ট করুন... যেমন: প্রোডাক্ট ভালো কিন্তু ডেলিভারি দেরি হয়েছে" promptTemplate={(t) => `Write 3 professional, empathetic business responses to this customer review: "${t}"\n\nProvide:\n1. Positive review response\n2. Neutral/constructive response\n3. Negative review response (apologetic, solution-oriented)\n\nResponses:`} creditCost={2} inputLabel="কাস্টমার রিভিউ" />; }

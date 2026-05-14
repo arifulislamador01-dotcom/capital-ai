@@ -1,0 +1,3 @@
+'use client';
+import AITextTool from '@/components/shared/AITextTool';
+export default function DarkhastPage() { return <AITextTool title="Darkhast Writer" titleBn="দরখাস্ত লেখক" icon="📄" description="বাংলায় দরখাস্ত/আবেদন লিখুন — AI দিয়ে" placeholder="দরখাস্তের বিষয়... যেমন: ছুটির আবেদন, বেতন বৃদ্ধি, স্থানান্তর" promptTemplate={(t) => `Write a formal application (দরখাস্ত) in Bengali about: ${t}\n\nFollow proper Bengali formal letter format:\n- বরাবর (To)\n- বিষয়: (Subject)\n- মহোদয়/মহোদয়া\n- Body\n- বিনীত/অনুগত\n\nদরখাস্ত:`} creditCost={2} inputLabel="দরখাস্তের বিষয়" maxTokens={600} />; }

@@ -1,0 +1,3 @@
+'use client';
+import AITextTool from '@/components/shared/AITextTool';
+export default function SymptomCheckerPage() { return <AITextTool title="Symptom Checker" titleBn="সিম্পটম চেকার" icon="🩺" description="⚠️ এটি শুধুমাত্র তথ্যের জন্য — ডাক্তারের বিকল্প নয়" placeholder="আপনার উপসর্গ বর্ণনা করুন... যেমন: মাথাব্যথা, জ্বর, গলা ব্যথা" promptTemplate={(t) => `IMPORTANT: This is NOT medical advice. Always consult a doctor.\n\nBased on these symptoms: ${t}\n\nProvide:\n1. Possible conditions (most to least likely)\n2. When to see a doctor\n3. General home remedies\n4. Important warnings\n\n⚠️ DISCLAIMER: This is AI-generated information for educational purposes only.\n\nAnalysis:`} creditCost={2} inputLabel="উপসর্গ (⚠️ ডাক্তারের বিকল্প নয়)" />; }

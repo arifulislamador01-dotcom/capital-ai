@@ -1,0 +1,3 @@
+'use client';
+import AITextTool from '@/components/shared/AITextTool';
+export default function NDAPage() { return <AITextTool title="NDA Generator" titleBn="NDA টেমপ্লেট" icon="🤝" description="Non-Disclosure Agreement তৈরি করুন" placeholder="চুক্তির বিবরণ... যেমন: দুই কোম্পানির মধ্যে সফটওয়্যার প্রজেক্টের জন্য" promptTemplate={(t) => `Generate a Non-Disclosure Agreement (NDA) template for: ${t}\n\nInclude:\n1. Parties\n2. Definition of Confidential Information\n3. Obligations\n4. Duration\n5. Exclusions\n6. Remedies\n7. Signatures\n\nNDA:`} creditCost={2} inputLabel="চুক্তির বিবরণ" maxTokens={700} />; }

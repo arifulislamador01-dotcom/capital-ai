@@ -1,0 +1,3 @@
+'use client';
+import AITextTool from '@/components/shared/AITextTool';
+export default function ContentCalendarPage() { return <AITextTool title="Content Calendar" titleBn="কন্টেন্ট ক্যালেন্ডার" icon="📅" description="৩০ দিনের সোশ্যাল মিডিয়া কন্টেন্ট প্ল্যান তৈরি করুন" placeholder="আপনার নিশ/ব্র্যান্ড... যেমন: ফুড ব্লগ, টেক রিভিউ, ফ্যাশন" promptTemplate={(t) => `Create a 30-day social media content calendar for: ${t}\n\nFor each day, include:\n- Day number\n- Platform (Instagram/Facebook/TikTok)\n- Content type (Reel/Post/Story/Carousel)\n- Caption idea\n- Best posting time\n\nContent Calendar:`} creditCost={3} inputLabel="নিশ/ব্র্যান্ড" maxTokens={800} />; }
