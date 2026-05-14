@@ -26,7 +26,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ success: true, result });
     } catch {
       const demoResult = `🐞 **কোড ডিবাগ (ডেমো মোড)**\n\n**সমস্যা:** সম্ভাব্য Syntax Error বা Null Reference হতে পারে।\n\n**সমাধান:**\n\`\`\`javascript\n// এখানে ফিক্সড কোড থাকবে\nconsole.log('Fixed demo code');\n\`\`\`\n\n[সঠিক ডিবাগ পেতে API Key ব্যবহার করুন]`;
-      return NextResponse.json({ success: true, result: demoResult, ...DEMO_FLAG });
+      return NextResponse.json(Object.assign({ success: true, result: demoResult }, DEMO_FLAG));
     }
   } catch (e: any) {
     return NextResponse.json({ success: false, error: 'কোড ডিবাগ ব্যর্থ হয়েছে।' }, { status: 500 });
